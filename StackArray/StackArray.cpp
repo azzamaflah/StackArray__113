@@ -62,7 +62,7 @@ public:
 int main() { 
 	StackArray s;
 	while (true) {
-		cout << endl;
+		cout << endl; 
 		cout << "\n+++ Stack Menu+++\n";
 		cout << "1. Push\n";
 		cout << "2. Pop\n";
