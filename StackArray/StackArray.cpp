@@ -6,7 +6,7 @@ class StackArray{
 private:
 	string stack_array[5];
 	int top;
-public:
+public: 
 
 		
 }
