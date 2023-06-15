@@ -49,7 +49,7 @@ public:
 			cout << "\nStack is empty." << endl; 
 		}
 
-		else {
+		else { 
 			for (int tmp = 0; tmp <= top; tmp++) {
 				cout << stack_array[tmp] << endl;
 
@@ -59,7 +59,7 @@ public:
 	}
 };
 
-int main() {
+int main() { 
 	StackArray s;
 	while (true) {
 		cout << endl;
