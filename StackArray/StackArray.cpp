@@ -75,7 +75,7 @@ int main() {
 		switch (ch) {
 
 		case '1': {
-			s.push();
+			s.push(); 
 			break;
 		}
 		case '2':
