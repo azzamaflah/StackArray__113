@@ -34,8 +34,8 @@ public:
 
 		}
 
-		cout << "\nThe popped element is: " << stack_array[top] << endl; //step 2 
-		top--; //step 3 decrement
+		cout << "\nThe popped element is: " << stack_array[top] << endl; //step 2  
+		top--; //step 3 decrement  
 	}
 
 	//method for check if data is empty
