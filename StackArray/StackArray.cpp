@@ -7,23 +7,26 @@ private:
 	string stack_array[5];
 	int top;
 public:
-	//constructor
+	//constructor 
 	StackArray() {
-		top = -1;
+		top = -1;  
 	}
 
-	string push(string element) {
+	void push() {
 		if (top == 4) {//step 1
 			cout << "Number of data exceeds the limit." << endl;
-			return "";
+			return;
 
 		}
-		top++; //step 2
-		stack_array[top] = element; //step 3
-		cout << endl;
-		cout << element << "ditambahkan(pushed)" << endl;
 
-		return element;
+		cout << "\nEnter a element: ";
+		string element;
+		getline(cin, element);
+		top++; //step 2
+
+		stack_array[top] = element; // step3
+		cout << endl;
+		cout << element << "ditambahkan(pushed)" << endl; 
 	}
 	void pop() {
 		if (empty()) { //step 1
@@ -73,17 +76,10 @@ int main() {
 		switch (ch) {
 
 		case '1': {
-			cout << "\nEnter a element: ";
-			string element;
-			getline(cin, element);
-			s.push(element);
+			s.push();
 			break;
 		}
 		case '2':
-			if (s.empty()) {
-				cout << "\nStack is empty." << endl;
-				break;
-			}
 			s.pop();
 			break;
 
